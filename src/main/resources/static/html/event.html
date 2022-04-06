@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" name="viewport">
+    <link rel="stylesheet" href="../css/event.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Event</title>
+</head>
+<body>
+<script src="../javascript/event.js" defer></script>
+
+<div class="topnav" id="myTopnav">
+    <a  href=""></a>
+    <a class="active" href="../index.html">Home</a>
+    <a href="../html/news.html">News</a>
+    <a href="../html/contact.html">Contact</a>
+    <a href="../html/about.html" >About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        Musiqay <span style="display:inline-block; width: 10px;"></span> <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+
+<div class="container">
+    <form id="event-form">
+        <h2>Maak nieuw event</h2><br>
+        <div class="row">
+            <div class="col-25">
+                <label for="city">Stad: </label><br>
+            </div>
+            <div class="col-75">
+                <input type="text" name="city" id="city" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Land: </label><br>
+            </div>
+            <div class="col-75">
+                <input type="text" name="country" id="country" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="postalCode">Postcode: </label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="postalCode" id="postalCode" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="info">Info: </label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="info" id="info" required>
+            </div>
+            </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="link">Link: </label>
+            </div>
+            <div class="col-75">
+                <input type="url" name="link" id="link" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="date">Date: </label>
+            </div>
+            <div class="col-75">
+                <input type="date" name="date" id="date" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="houseNumber">Huisnummer: </label>
+            </div>
+            <div class="col-75">
+
+                <input type="number" name="houseNumber" id="houseNumber" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="persons">Aantal: </label>
+            </div>
+            <div class="col-75">
+                <input type="number" name="persons" id="persons" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+            <input type="submit" name="submit" value="Submit">
+        </div>
+        </div>
+    </form>
+</div>
+
+<script src="../javascript/event.js"></script>
+
+</body>
+</html>

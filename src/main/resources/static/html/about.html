@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <title>about</title>
+</head>
+<body>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}</script>
+
+<div class="topnav" id="myTopnav">
+  <a href=" "> </a>
+  <a class="active" href="../index.html">Home</a>
+  <a href="../html/news.html">News</a>
+  <a href="../html/contact.html">Contact</a>
+  <a href="../html/about.html" >About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    Musiqay <span style="display:inline-block; width: 10px;"></span> <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="../img/pushkin.jpg" alt="pushkin" style="width:100%">
+      <div class="container">
+        <h2>Pushkin</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>pushkin@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="../img/noor.jpg" alt="Noor" style="width:100%">
+      <div class="container">
+        <h2>Noor</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>noor@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="../img/omar.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Omar </h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>omaralabdullah1414@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

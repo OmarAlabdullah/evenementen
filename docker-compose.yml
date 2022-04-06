@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  db:
+    build: development/db
+    ports:
+      - "25432:5432"
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - DB_APP_NAME=evenementen
+      - DB_APP_USER=evenementen
+      - DB_APP_PASS=evenementen
+    volumes:
+      - "./data:/var/data/db"

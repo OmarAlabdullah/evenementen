@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Musiqay</title>
+</head>
+<body>
+<script src="index.js"></script>
+<script src="javascript/authentication.js" defer></script>
+
+<div class="topnav" id="myTopnav">
+
+    <a  href=""></a>
+    <a href="html/news.html">News</a>
+    <a href="html/contact.html">Contact</a>
+    <a href="html/about.html" >About</a>
+    <a href="#login"  onclick="openLoginForm()">Login</a>
+    <a href="#register"  onclick="openRegisterForm()">Register</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        Musiqay <span style="display:inline-block; width: 10px;"></span> <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<main class="main-area" id="container"></main>
+
+<div class="form-popup" id="loginFormId">
+    <form  class="form-container">
+        <h1>Login</h1>
+        <input type="email" placeholder="Email" name="username" id="nameId" aria-label="username" class="email" required/>
+        <input type="password" placeholder="Password" name="password" src="passwordId" aria-label="password" required/>
+        <button type="submit" class="btn" value="Login" > Sign in </button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+
+<div class="form-popup" id="registrationFormId">
+    <form  class="form-container">
+        <h1>register</h1>
+        <input type="text" placeholder="Name" name="username" id="usernameId" aria-label="name" required/>
+        <input type="text" placeholder="Email" name="email" id="emailId" aria-label="email" required/>
+        <input type="password" placeholder="Password" name="password" id="passwordId" aria-label="password" required/>
+        <input type="text" placeholder="Firstname" name="firstname" id="firstnameId" aria-label="firstname" required/>
+        <input type="text" placeholder="Lastname" name="lastname" id="lastnameId" aria-label="lastname" required/>
+        <input type="text" placeholder="Role" name="role" id="roleId" aria-label="role" required/>
+        <button type="submit" name="submit" class="btn" id="registrationformsubmit" value="Sign Up" > Sign Up </button>
+        <button type="button" class="btn cancel" onclick="closeRegisterForm()">Close</button>
+    </form>
+</div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<body>-->
+<!--<h2>Welcome in Musiqay</h2>-->
+<!--<div class="container" id="container">-->
+<!--    <div class="form-container sign-up-container">-->
+<!--        <form id="registrationFormId">-->
+<!--            <h1>Create Account</h1>-->
+<!--            <div class="social-container">-->
+<!--                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>-->
+<!--                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>-->
+<!--                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>-->
+<!--            </div>-->
+<!--            <span>or use your email for registration</span>-->
+<!--            <label for="usernameId" id="emptyLable"></label><br>-->
+<!--            <input type="text" placeholder="Name" name="username" id="usernameId" required/>-->
+<!--            <input type="email" placeholder="Email" name="email" id="emailId" required/>-->
+<!--            <input type="password" placeholder="Password" name="password" id="passwordId" required/>-->
+<!--            <input type="text" placeholder="Firstname" name="firstname" id="firstnameId" required/>-->
+<!--            <input type="text" placeholder="Lastname" name="lastname" id="lastnameId" required/>-->
+<!--            <input type="text" placeholder="Role" name="role" id="roleId" required/>-->
+<!--            <input type="submit" class="button" id="registrationformsubmit" value="Sign Up">-->
+<!--        </form>-->
+<!--    </div>-->
+<!--    <div class="form-container sign-in-container">-->
+<!--        <form id="inlogFormId">-->
+<!--            <h1>Sign in</h1>-->
+<!--            <div class="social-container">-->
+<!--                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>-->
+<!--                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>-->
+<!--                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>-->
+<!--            </div>-->
+<!--            <span>or use your account</span>-->
+<!--            <input type="email" placeholder="Email" name="username" id="nameId" required/>-->
+<!--            <input type="password" placeholder="Password" name="password" src="passwordId" required/>-->
+<!--            <a href="#">Forgot your password?</a>-->
+<!--            <input type="submit" class="button" id="loginformsubmit" value="Sign In">-->
+<!--        </form>-->
+<!--    </div>-->
+<!--    <div class="overlay-container">-->
+<!--        <div class="overlay">-->
+<!--            <div class="overlay-panel overlay-left">-->
+<!--                <h1>Welcome Back!</h1>-->
+<!--                <p>To keep connected with us please login with your personal info</p>-->
+<!--                <button class="ghost" id="signIn">Sign In</button>-->
+<!--            </div>-->
+<!--            <div class="overlay-panel overlay-right">-->
+<!--                <h1>Hello, Friend!</h1>-->
+<!--                <p>Enter your personal details and start journey with us</p>-->
+<!--                <button class="ghost" id="signUp">Sign Up</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<footer>-->
+<!--    <p>-->
+<!--        for more information call 000000000-->
+<!--        <a target="_blank" href="html/news.html"> hier</a><br><br>-->
+
+<!--    Login to spotify-->
+<!--    <a href="https://accounts.spotify.com/authorize/?scope=user-read-private playlist-read-private playlist-modify-public user-library-read user-read-recently-played streaming app-remote-control&response_type=code&redirect_uri=http://localhost:8080/v1/responseFromSpotify&client_id=3bd4697642864c61b15c7385652cd7b4">click here to redirect to Spotify Web App (where you would authorize this application to get a token to interact with spotify on your behalf)</a>-->
+
+<!--    </p>-->
+<!--</footer>-->
+<!--<script src="javascript/file.js"></script>-->
+<!--<script src="javascript/authentication.js"></script>-->
+<!--</body>-->
+
+</html>
